@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>EZEN WEB PAGE </title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+
+  <body>
+
+    <div id="header"><!-- ===========  헤더 ==============   -->
+      <h1><img src="images/logo.png" ></h1>
+      <!-- ===========  내비 ==============   -->
+      <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/finalpage/calender.html">SCHEDULE</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+      <!-- ===========  내비 ==============   -->
+    </div><!-- ===========  헤더 ==============  -->
+
+    <div id="content">
+
+      <div id="main"> <!-- ===========  메인 ==============  -->
+            <h2> 스케줄 달력 </h2>
+            <div class="calwrap"> <!-- 캘린더 전체구역 -->
+	
+                <div class="caltop"> <!-- 상단 메뉴  -->
+                    <button onclick="onNext( 0 )" type="button"> ◀ </button>  <!-- 이전 달 버튼 -->
+                    <h4 class="caldate"> 2023년 07월 </h4>				<!-- 현재 연도/월 표시 구역 -->
+                    <button onclick="onNext( 1 )"type="button"> ▶ </button>  <!-- 다음 달 버튼 -->
+                </div>
+                
+                <div class="calendar"> <!-- 날짜 표시 구역  -->
+                    <!-- 상단 요일 표기 일~토 -->
+                    <div class="week sunday"> 일 </div> 	
+                    <div class="week"> 월 </div>
+					<div class="week"> 화 </div> 		
+                    <div class="week"> 수 </div> 
+					<div class="week"> 목 </div>			
+                    <div class="week"> 금 </div>	
+					<div class="week"> 토 </div>
+
+                    <div> 1 <span class="content">aaaaaaaaaa</span> </div>
+                    <div> 2 <span class="content">aaaaaaaaaa</span></div>
+                    <div> 3 <span class="content">aaaaaaaaaa</span></div>
+                    <div> 4 </div>
+                    <div> 5 </div>
+                    <div> 6 </div>
+                    <div> 7 </div>
+                    <div> 8 </div>
+                    <div> 9 </div>
+                    <div> 10 </div>
+                    <div> 11 </div>
+                    
+                    <!-- 일 표기 1 ~ 31/30/29 -->
+                    
+                </div>
+                
+            </div> <!--  ----------------------------------  -->
+
+            <div>
+                <h3> 스테줄 등록 </h3>
+                <input class="inputDate" type="date" >
+                <input class="inputContent" type="text" placeholder="날짜선택후 내용입력" />
+                <button class="inputBtn" onclick="일정등록()" type="button"> 등록 </button>
+            </div>
+
+      </div>  <!-- ===========  메인 ==============  -->
+
+
+      <div id="sidebar"><!-- ===========  사이드바 ==============   -->
+        <div class="categoryNav"> <!-- ===========  내비 ==============   -->
+          <h2>Category</h2>
+          <ul>
+            <li><a href="#">황희찬 일상(4)</a></li>
+            <li><a href="#">황희찬 축구 노하우(5)</a></li>
+            <li><a href="#">황희찬 일대기</a></li>
+            <li><a href="#">황희찬 경력</a></li>
+          </ul>
+        </div> <!-- ===========  내비 ==============   -->
+        <div class="recentNav">  <!-- ===========  내비 ==============   -->
+          <h2>Recent Articles</h2>
+          <ul>
+            <li><a href="#">EPL 선수 연봉 TOP10</a></li>
+            <li><a href="#">대한민국 스쿼드</a></li>
+            <li><a href="#">새로운 대한민국 국가대표 감독 선임</a></li>
+            <li><a href="#">FA컵 16강전, 공 다투는 황희찬</a></li>
+            <li><a href="#">‘EPL 골 결정력’ 황희찬 1위 - 손흥민 3위</a></li>
+            <li><a href="#">햄스트링 다친 황희찬, 6주 이탈…월드컵 예선 태국전 못 뛸듯</a></li>
+          </ul>
+        </div> <!-- ===========  내비 ==============   -->
+      </div> <!-- ===========  사이드바 ==============   -->
+    </div>
+
+    <div id="footer">  <!-- ===========  푸터 ==============   -->
+        <small>© 2024 EZEN WEB PAGE </small>
+    </div> <!-- ===========  푸터 ==============   -->
+    
+  </body>
+
+  <script src="js/calender.js"></script>
+
+
+</html>

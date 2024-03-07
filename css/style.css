@@ -111,3 +111,67 @@ body{
 }
  
 
+/* ========================== */
+
+/* 캘린더 전체구역 */
+/* 캘린더 상단 메뉴 */
+.caltop{
+	display:  flex; 
+	justify-content:center; 
+    align-items: center;
+    font-size: 30px;
+    margin: 30px 0px;
+}
+/* 캘린더 상단 메뉴 버튼 들 */
+.caltop button{
+	background-color: white;
+	border: none;
+	font-size: 30px; 
+}
+/* 캘린더 상단 연도/월 표시 */
+.caltop h4{ margin: 0 15px; }
+/* 캘린더(달력) 구역 */
+.calendar{
+	display:  flex;
+	flex-wrap: wrap; /* 하위 요소의 사이즈가 부족할때 자동 줄바꿈 */
+}
+/* 캘린더(달력) 1개 구역 */
+.calendar div{
+	width: 13%; /* 100%/7  = 14.2~% */
+	border: 1px solid #eeeeee;
+	height: 100px;
+    overflow-y: auto;
+}
+/* 월~토 */
+.week{
+	height: 30px !important; /* css 충돌/중복속성일경우 최우선 */
+	background-color: #e8e8e8;
+	text-align: center;
+}
+/* 일요일 */
+.sunday{ background-color: red; color: white; }
+
+/* 일정 출력 */
+.content{
+	background-color: pink; 
+    color: black;
+	padding:3px 0px;  margin: 2px;
+	display: block; /* span 태그의 기본값은 inline 이기떄문에 사이즈 적용x */
+	/* 만약에 해당 구역보다 내용물(텍스트) 이 더 커지면 ... 표시해서 잘림 */
+    overflow: hidden; /* 넘치면 넘친 부분 숨기기 */
+	white-space: nowrap; /* 만약에 텍스트 커지면 자동 줄바꿈 해제 */
+	text-overflow: ellipsis; /* ellipsis : 넘친 부분을 ... 표시 */
+}
+
+.inputContent , .inputDate , .inputBtn{
+    padding: 10px;
+    border: none;
+    background-color: #eeeeee;
+    border-radius: 15px;
+}
+
+.testtest{
+	overflow: hidden; /* 넘치면 넘친 부분 숨기기 */
+	white-space: nowrap; /* 만약에 텍스트 커지면 자동 줄바꿈 해제 */
+	text-overflow: ellipsis; /* ellipsis : 넘친 부분을 ... 표시 */
+}
